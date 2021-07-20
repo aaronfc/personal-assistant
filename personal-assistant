@@ -1,0 +1,6 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+export DISPLAY=:0
+export PULSE_RUNTIME_PATH="/run/user/1000/pulse/"
+# -u means unbuffered
+env3/bin/python3 -u main.py
